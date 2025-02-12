@@ -1,0 +1,100 @@
+<html>
+    <body>
+        <div> 
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        <h1 style="font-style: italic;"> RSVP for Alice's BDay Night out!</h1>
+            <br/>
+            <br/>
+        <img id="valentineImage" src="cat close up.jpeg"
+        height="300"
+        >
+        <br/>
+        <br/>
+        <button id="yesButton">YES</button>
+        <button id="noButton">NO</button>
+        <br/>
+    </div>
+        
+
+        <style>
+            body {
+                background: linear-gradient(to bottom, #f5cac3, #f7ede2);
+            }
+            div{
+                text-align: center;
+                vertical-align: middle;
+            }
+            h1 {
+                color: #76a51d;
+            }
+            #yesButton {
+                background-color: blueviolet;
+                transition: transform 0.3s;
+                margin-right: 10px;
+                width: 120px;
+                font-size: 30px;
+                height: 40px;
+                color: aquamarine;
+                margin-left: -140px;
+
+            }
+            #noButton {
+                position:absolute;
+                background-color: #ff69b4;
+                transition: transform 0.3s;
+                margin-left: 10px;
+                width: 120px;
+                /* font-size: 30px; */
+                height: 40px;
+                color:aquamarine;
+            }
+        </style>
+        <script>
+            document.getElementById("yesButton").addEventListener("click", showAlert);
+            document.getElementById("noButton").addEventListener("click", showNoAlert);
+
+            function showAlert() {
+                alert("YASSSS");
+                
+            }
+          
+            
+
+            function showNoAlert() {
+                alert(":(");
+            }
+            
+            
+    
+            
+
+        </script>
+    </body>
+</html>
+<script>
+    document.getElementById("noButton").addEventListener("click", function() {
+        document.getElementById("valentineImage").src = "sadcat.jpg";
+    });
+    document.getElementById("yesButton").addEventListener("click", function() {
+        document.getElementById("valentineImage").src = "cat cheers.jpeg";
+    });
+</script>
+
+    
+    <style>
+        #yesButton:hover {
+            background-color: #8a2be2;
+            transform: scale(1.1);
+        }
+
+        #noButton:hover {
+            background-color:#ff69b4;
+            transform: scale(1.1);
+        }
+    </style>
+
+    </script>
